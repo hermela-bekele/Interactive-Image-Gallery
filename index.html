@@ -3,25 +3,24 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Interactive Gallery</title>
+        <title>Modern Interactive Gallery</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     <body>
         <header class="header">
-            <h1>Photo Gallery</h1>
+            <h1>📸 Modern Photo Gallery</h1>
             <div class="search-container">
-                <input type="text" id="search" placeholder="Search images...">
+                <input type="text" id="search" class="search-input" placeholder="Search images...">
+                <i class="fas fa-search search-icon"></i>
             </div>
-        </header>
+        </header> 
         <main class="gallery-container" id="gallery"></main>
-        <section class="blog-section">
-            <img src="float-image.jpg" alt="Blog Image" class="float-image">
-            <p>qwertyuiopasdfghjklzxcvbnm</p>
-        </section>
+        <div class="loading" id="loading">Loading...</div>
         <div class="modal-overlay" id="modal">
             <div class="modal-content">
                 <span class="close-btn">&times;</span>
-                <img id="modal-image" src="" alt="Enlarged View">
+                <img id="modal-image" src="" alt="Enlarged View" class="modal-image">
             </div>
         </div>
         <script src="app.js"></script>
